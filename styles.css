@@ -152,7 +152,7 @@ html{
   width: 100%;
   padding: 2%;
   background: linear-gradient(-45deg,#252525, #0c59cc);
-  background-image:  linear-gradient(#000000c5, #000000c5 ) , url(/skill.jpg);
+  background-image:  linear-gradient(#000000c5, #000000c5 ) , url(https://github.com/Chinthan21/Portfolio-Web-Development-/blob/main/skill.jpg);
   background-attachment:local;
   background-size: cover;
   background-repeat: no-repeat;
@@ -211,7 +211,7 @@ html{
   width: 100%;
   padding: 2%;
   background: #252525;
-  background-image:  linear-gradient(#000000f3, #000000ee ) , url(/project.jpg);
+  background-image:  linear-gradient(#000000f3, #000000ee ) , url(https://github.com/Chinthan21/Portfolio-Web-Development-/blob/main/project.jpg);
   background-attachment: local;
   background-size:cover;
   background-repeat: no-repeat;
@@ -310,7 +310,7 @@ html{
   height: 100vh;
   width: 100%;
   padding: 2%;
-  background-image:  linear-gradient(#000000c5, #000000c5 ) , url(/contact.jpg);
+  background-image:  linear-gradient(#000000c5, #000000c5 ) , url(https://github.com/Chinthan21/Portfolio-Web-Development-/blob/main/contact.jpg);
   background-attachment:fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -446,7 +446,7 @@ html{
   height: 100vh;
   width: 100%;
   padding: 2%;
-  background-image:  linear-gradient(#000000c5, #000000c5 ) , url(/about.jpg);
+  background-image:  linear-gradient(#000000c5, #000000c5 ) , url(https://github.com/Chinthan21/Portfolio-Web-Development-/blob/main/about.jpg);
   background-attachment:fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -498,7 +498,7 @@ html{
   width: 30vw;
   height: 60vh;
   /* position: relative; */
-  background-image: url(/chinthanP.png);
+  background-image: url(https://github.com/Chinthan21/Portfolio-Web-Development-/blob/main/chinthanP.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
