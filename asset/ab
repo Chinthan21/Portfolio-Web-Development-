@@ -1,0 +1,402 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+  }
+  .portfolio-headder{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    gap: 5rem;
+    background-color: #333;
+    position: fixed;
+  }
+  .nav-list {
+    /* height: 8vh;
+    width: 100%; */
+    display: flex; 
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #333; */
+    /* position: fixed;  */
+  }
+  .logo h1{
+    color: #e9e9e9;
+    font-size: 1rem;
+  }
+  .nav-list li{
+    list-style: none;
+  }
+  .nav-list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+  }
+  .nav-list li a::after, .nav-list .active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    height: .1rem;
+    right: 0;
+    bottom: -.1rem;
+    transform: scaleX(0);
+    transition: transform .5s;
+  }
+  .nav-list li a:hover::after, .nav-list .active::after{
+    transform: scaleX(1);
+  }
+#home{
+  display: flex;
+}
+.left-container, .right-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.left-container{
+  background-color: #252525;
+  width: 70%;
+  padding-left: 3rem;
+}
+.content{
+  margin-left: 2rem;
+}
+.content .intro{
+  font-size: 1.5rem;
+  color: #fff;
+}
+.content .intro span{
+  color: aqua;
+}
+.content .detail {
+  font-size: 1.1rem;
+  color: #fff;
+  max-width: 80%;
+  margin: 1.1rem 0 3rem 0;
+  line-height: 2rem;
+}
+.content h1 {
+  font-size: 3rem;
+  color: #3877FF;
+}
+.btn-home .btn-hb1, .btn-hb2{
+  border: .1rem solid #5dB9EE;
+  font-size: 1.1rem;
+  padding: .8rem 1.5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.btn-home .btn-hb1{
+  background-color: #5dB9EE;
+}
+.btn-home .btn-hb1:hover{
+  background-color: transparent;
+  color: #5dB9EE;
+}
+.btn-home .btn-hb2{
+  background-color: transparent;
+  color: #5dB9EE;
+  margin-left: 2rem;
+}
+.btn-home .btn-hb2:hover{
+  background-color: #5dB9EE;
+  color: #060d11;
+}
+.right-container{
+  background: linear-gradient(45deg,#3877FF, #252525 );
+  width: 30%;
+}
+  .design .circle1, .circle2{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+.design .circle1{
+  background: linear-gradient(90deg, transparent 50%, #252525 50%);
+  width: 30rem;
+}
+.design .circle2{
+  background-image: url(./asset/Photo-removebg-preview.png);
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 25rem;
+  border: .5rem solid #fff;
+  box-shadow: 
+   0 0 1rem #fff,
+   inset 0 0 1rem #fff;
+}
+.skill-page{
+  height: 100vh;
+  width: 100%;
+  padding: 2%;
+  background: linear-gradient(-45deg,#252525, #0c59cc);
+}
+.skill-page h1{
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  /* padding: 2rem; */
+}
+
+
+.skill-page .skill-container .skill-type {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* margin-bottom: 2rem; */
+  padding: 1rem;
+}
+.skill-page .skill-container .skill-type .skill-head {
+  width: 30%;
+}
+.skill-page .skill-container .skill-type .skill-head h1 {
+  font-size: 2rem;
+  color: #fff;
+}
+.skill-page .skill-container .skill-type .skill-l {
+  display: flex;
+  align-items: center;
+  /* gap: 10rem; */
+  justify-content: space-between;
+  width: 70%;
+  
+}
+.skill-page .skill-container .skill-type .skill-l li{
+  list-style: none;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  color: #fff;
+  /* gap: 1rem; */
+}
+.skill-page .skill-container .skill-type .skill-l li i{
+  background: linear-gradient(yellow, red);
+  font-size: 3rem;
+  padding: .5;
+}
+.skill-page .skill-container .skill-type .skill-l li p{
+  font-size: 1.2rem;
+  text-transform:uppercase;
+}
+
+  
+
+  <i class="fa-brands fa-square-instagram"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-github"></i>
+  <i class="fa-brands fa-wordpress"></i>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="portfolio-container">
+    <header>
+      <div class="portfolio-headder">
+        <ul class="logo">
+          <h1>Chinthan</h1>
+        </ul>
+        <ul class="nav-list">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      </header>
+
+
+    <section id="home">
+      <div class="left-container">
+        <div class="content">
+          <p class="intro">Hi! I Am <span>Chinthan</span></p>
+          <h1>Web Developer</h1>
+          <p class="detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, doloribus.</p>
+          <div class="btn-home">
+            <button class="btn-hb1">Hire Me</button>
+            <button class="btn-hb2">View Projects</button>
+          </div>
+        </div>
+      </div>
+      <div class="right-container"></div>
+      <div class="design">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div> -->
+      <!-- <h2>Home</h2>
+      <img src="your-image.jpg" alt="Your Name">
+      <p>Your short bio highlighting skills and experience goes here.</p>
+    </section>
+
+    <!-- <section id="about">
+      <h2>About</h2>
+      <img src="your-image.jpg" alt="Your Name">
+      <p>Your short bio highlighting skills and experience goes here.</p>
+    </section> -->
+
+    <!-- <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <li>Skill 3</li> -->
+    <!-- Add more skills as needed -->
+    <!-- </ul>
+    </section> -->
+
+    <!-- <section id="projects">
+      <h2>Projects</h2> -->
+    <!-- Add your project samples with titles, descriptions, and images -->
+    <!-- <div class="project">
+        <h3>Project Title 1</h3>
+        <p>Description of Project 1</p>
+        <img src="project1.jpg" alt="Project 1">
+      </div>
+      <div class="project">
+        <h3>Project Title 2</h3>
+        <p>Description of Project 2</p>
+        <img src="project2.jpg" alt="Project 2">
+      </div> -->
+    <!-- Add more projects as needed -->
+    <!-- </section> -->
+
+
+    <!-- <footer>
+      <p>&copy; 2024 AFAME TECHNOLOGIES. All rights reserved.</p>
+    </footer> -->
+  </div>
+</body>
+
+</html>
+
+
+.project-page {
+  height: 100vh;
+  width: 100%;
+  padding: 2%;
+  background: #252525;
+  background-image:  linear-gradient(#000000f3, #000000ee ) , url(./asset/project.jpg);
+  background-attachment: local;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.project-page h2{
+  color: #fff;
+  text-align: center;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+}
+
+.project-page .project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.project-page .project-list .project{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.project-page .project-list .project img{
+  width: 100%;
+  height: 50vh;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.project-page .project-list .project img:hover{
+  transform: scale(1.1);
+}
+.project-page .project-list .project .layer{
+  width: 100%;
+  height: 0;
+  transition: height 0.8s;
+  /* color: #fff; */
+  background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0vw 2vw;
+  text-align:center;
+}
+.project-page .project-list .project .layer h3{
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  /* margin-top: 10vw; */
+}
+.project-page .project-list .project:hover .layer  {
+  height: 50vh;
+  visibility: visible;
+}
+.project-page .project-list .project:hover .layer h3{
+  font-size: 1.5vw;
+}
+.project-page .project-list .project:hover .layer p{
+  font-size: 1vw;
+}
+.project-page .project-list .project .layer  p{
+  color: #fff;
+  text-align: justify;
+}
+#readMore1, #readMore2, #readMore3 {
+  display: none;
+}
+.read-more{
+  color: #00fae5;
+  font-size: 1.2vw;
+  font-weight: 600;
+  cursor: pointer;
+}
+.project-page .project-list .project .layer .readMore-para {
+  visibility: hidden;
+  color: rgb(0, 183, 255);
+}
+.project-page .project-list .project .layer .readMore-para a{
+  visibility: hidden;
+  color: rgb(0, 183, 255);
+}
+#readMore1:checked ~ .layer p .readMore-para {
+  visibility: visible;
+}
+#readMore2:checked ~ .layer p .readMore-para {
+  visibility: visible;
+}
+#readMore3:checked ~ .layer p .readMore-para a{
+  visibility: visible;
+} 
